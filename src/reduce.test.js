@@ -36,6 +36,6 @@ describe('reduce', () => {
 
     expect(reduce(array,
         (result, value) => result + value, undefined))
-        .toEqual(0);
+        .toEqual(NaN);
   });
 });
