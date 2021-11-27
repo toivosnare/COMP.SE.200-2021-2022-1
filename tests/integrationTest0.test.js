@@ -1,5 +1,5 @@
-describe("describe", () => {
-    test("test", () => {
-        console.log("integration test");
-    });
+describe('describe', () => {
+  test('test', () => {
+    console.log('integration test');
+  });
 });

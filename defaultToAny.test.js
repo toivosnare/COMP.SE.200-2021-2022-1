@@ -1,5 +1,5 @@
-describe("describe", () => {
-    test("test", () => {
-        console.log("moi");
-    });
+describe('describe', () => {
+  test('test', () => {
+    console.log('moi');
+  });
 });
