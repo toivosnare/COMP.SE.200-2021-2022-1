@@ -22,9 +22,11 @@ describe('endsWith', () => {
   test('Position argument is greater than the inputs strings length', () => {
     expect(endsWith('abc', 'c', 10)).toEqual(true);
   });
-  test('Position argument is less than zero', () => {
-    expect(endsWith('abc', 'c', -1)).toEqual(false);
-    expect(endsWith('', 'c', -1)).toEqual(true);
+  test('Position argument is less or equal to zero', () => {
+    expect(endsWith('abc', 'a', 0)).toEqual(false);
+    expect(endsWith('abc', '', 0)).toEqual(true);
+    expect(endsWith('', 'a', 0)).toEqual(false);
+    expect(endsWith('', '', 0)).toEqual(true);
   });
   test('Input string is empty, and target is non-empty', () => {
     expect(endsWith('', 'c')).toEqual(false);
