@@ -27,6 +27,10 @@ describe('endsWith', () => {
     expect(endsWith('abc', '', 0)).toEqual(true);
     expect(endsWith('', 'a', 0)).toEqual(false);
     expect(endsWith('', '', 0)).toEqual(true);
+    expect(endsWith('abc', 'a', -1)).toEqual(false);
+    expect(endsWith('abc', '', -1)).toEqual(true);
+    expect(endsWith('', 'a', -1)).toEqual(false);
+    expect(endsWith('', '', -1)).toEqual(true);
   });
   test('Input string is empty, and target is non-empty', () => {
     expect(endsWith('', 'c')).toEqual(false);
