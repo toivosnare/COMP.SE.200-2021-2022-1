@@ -5,11 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage && node node_modules/coveralls/bin/coveralls.js < coverage/lcov.info"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "coveralls": "^3.1.1",
     "eslint": "^8.3.0",
     "eslint-config-google": "^0.14.0",
     "jest": "^27.3.1"
