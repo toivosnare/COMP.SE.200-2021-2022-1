@@ -42,4 +42,8 @@ describe('toString', () => {
   test('Give a negative zero', () => {
     expect(toString(-0)).toEqual('-0');
   });
+  test('Give a symbol value', () => {
+    expect(toString(Symbol())).toEqual('Symbol()');
+    expect(toString(Symbol('foobar'))).toEqual('Symbol(foobar)');
+  });
 });
