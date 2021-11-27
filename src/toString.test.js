@@ -30,9 +30,7 @@ describe('toString', () => {
     expect(toString(function() {})).toEqual('function () {}');
     expect(toString(() => {})).toEqual('() => {}');
 
-    expect(toString((value) => {
-      return 0;
-    })).toEqual('value => {\n'+'      return 0;\n'+'    }');
+    expect(toString((value) => 0)).toEqual('value => 0');
   });
   test('Give undefined input', () => {
     expect(toString(undefined)).toEqual('undefined');
