@@ -35,4 +35,11 @@ describe('toString', () => {
   test('Give undefined input', () => {
     expect(toString(undefined)).toEqual('undefined');
   });
+  test('Give array with null values', () => {
+    expect(toString([null])).toEqual('');
+    expect(toString([0, null])).toEqual('0,');
+  });
+  test('Give a negative zero', () => {
+    expect(toString(-0)).toEqual('-0');
+  });
 });
