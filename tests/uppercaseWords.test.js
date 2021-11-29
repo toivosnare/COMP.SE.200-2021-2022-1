@@ -38,7 +38,7 @@ test("Make sure product descriptions' words start with uppercase letter", () => 
     if (product.description) {
       for (const word of words(product.description, wordRegex)) {
         // Expect all words begin with capital letter.
-        expect(word.match(/[A-Z]/)).not.toEqual([]);
+        expect(word.match(/[A-Z][a-z]*/)).not.toEqual([]);
       }
     }
   }
