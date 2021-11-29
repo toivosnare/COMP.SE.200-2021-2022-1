@@ -8,7 +8,6 @@ describe('filter', () => {
     expect(filter(undefined, (value) => value == 0)).toEqual(undefined);
   });
   test('Leave predicate undefined', () => {
-    // TODO: should equal empty array instead?
     expect(filter([], undefined)).toEqual(undefined);
   });
   test('Predicate returns true for some elements', () => {
