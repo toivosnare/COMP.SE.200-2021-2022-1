@@ -7,6 +7,7 @@ class MockProduct {
     this.name = name;
     this.price = price;
     this.producer = producer;
+    this.description = undefined;
   }
 };
 
@@ -22,11 +23,10 @@ export function generateMockProducts(numberOfCompanies, productsPerCompany, seed
 
   for (const company of companies) {
     for (let i = 0; i < productsPerCompany; i++) {
-      productList.push(new MockProduct(
-          faker.commerce.productName(),
-          faker.commerce.price(),
-          company,
-      ));
+      const product = new MockProduct(faker.commerce.productName(), faker.commerce.price(), company);
+      if (product.price > 500.0)
+        product.description = faker.commerce.productDescription();
+      productList.push(product);
     }
   }
 
