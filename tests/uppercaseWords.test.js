@@ -7,6 +7,7 @@ import reduce from "../src/reduce";
 test("Make sure product descriptions' words start with uppercase letter", () => {
   const products = product.generateMockProducts(5, 5, 42);
 
+  // Regex to match to words containing lowercase or uppercase letters.
   const wordRegex = new RegExp(/[a-zA-Z]+/g);
 
   // Capitalizes each word in the given string.
