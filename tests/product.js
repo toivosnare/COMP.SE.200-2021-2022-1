@@ -1,6 +1,5 @@
 /* eslint-disable require-jsdoc */
-import faker from 'faker';
-
+import faker from "faker";
 
 class MockProduct {
   constructor(name, price, producer) {
@@ -9,9 +8,13 @@ class MockProduct {
     this.producer = producer;
     this.description = undefined;
   }
-};
+}
 
-export function generateMockProducts(numberOfCompanies, productsPerCompany, seed) {
+export function generateMockProducts(
+  numberOfCompanies,
+  productsPerCompany,
+  seed
+) {
   const productList = [];
 
   faker.seed(seed);
@@ -23,7 +26,11 @@ export function generateMockProducts(numberOfCompanies, productsPerCompany, seed
 
   for (const company of companies) {
     for (let i = 0; i < productsPerCompany; i++) {
-      const product = new MockProduct(faker.commerce.productName(), faker.commerce.price(), company);
+      const product = new MockProduct(
+        faker.commerce.productName(),
+        faker.commerce.price(),
+        company
+      );
       if (product.price > 500.0)
         product.description = faker.commerce.productDescription();
       productList.push(product);
