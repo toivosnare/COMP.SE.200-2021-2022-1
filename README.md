@@ -1,4 +1,4 @@
-# Software Testing course project
+# Software Testing course project (Part 2) | A-ryhmä
 
 [![Coverage Status](https://coveralls.io/repos/github/toivosnare/COMP.SE.200-2021-2022-1/badge.svg?branch=main)](https://coveralls.io/github/toivosnare/COMP.SE.200-2021-2022-1?branch=main)
 
