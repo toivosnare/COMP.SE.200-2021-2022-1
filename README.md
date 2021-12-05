@@ -1,6 +1,7 @@
 # Software Testing course project (Part 2) | A-ryhmä
 
 [![Coverage Status](https://coveralls.io/repos/github/toivosnare/COMP.SE.200-2021-2022-1/badge.svg?branch=main)](https://coveralls.io/github/toivosnare/COMP.SE.200-2021-2022-1?branch=main)
+[![Build Status](https://app.travis-ci.com/toivosnare/COMP.SE.200-2021-2022-1.svg?branch=main)](https://app.travis-ci.com/toivosnare/COMP.SE.200-2021-2022-1)
 
 ## Purpose of this repository
 
